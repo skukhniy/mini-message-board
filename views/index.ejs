@@ -7,8 +7,9 @@
 	<body>
 		<h1><%= title %></h1>
 		<% messages.forEach((message) => {%>
-		<h4><%= message.text %></h4>
-		<p><%= `${message.user} - ${message.added}` %></p>
+		<h4><%= message.user %></h4>
+		<p><%= `${message.text} - ${message.added}` %></p>
 		<% }); %>
+		<a href="/new">Add a Message</a>
 	</body>
 </html>
